@@ -7,43 +7,64 @@
     }
   },
   "PayBillOffer": {
-    "title": {
-      "ar": "عرض خاص",
-      "en": "Special Offer"
+    "ar": {
+      "bannerImg": "/static/js/assets/images/alsaada.svg",
+      "quickPayOfferLbl": "استمتع بخصم 10% على فاتورتك القادمة",
+      "quickPayMoreInfo": {
+        "lbl": "لمزيد من المعلومات",
+        "link": "https://www.du.ae/ar"
+      }
     },
-    "description": {
-      "ar": "استمتع بخصم 10% على فاتورتك القادمة",
-      "en": "Enjoy 10% discount on your next bill"
-    },
-    "image": "/static/js/assets/images/alsaada.svg",
-    "buttonText": {
-      "ar": "اعرف المزيد",
-      "en": "Learn More"
-    },
-    "buttonLink": "#"
+    "en": {
+      "bannerImg": "/static/js/assets/images/alsaada.svg",
+      "quickPayOfferLbl": "Enjoy 10% discount on your next bill",
+      "quickPayMoreInfo": {
+        "lbl": "Learn More",
+        "link": "https://www.du.ae/en"
+      }
+    }
   },
   "banner": {
-    "title": {
-      "ar": "حمل تطبيق du",
-      "en": "Download du App"
-    },
-    "description": {
-      "ar": "استمتع بتجربة أفضل مع تطبيق du الجديد",
-      "en": "Enjoy a better experience with the new du app"
-    },
-    "image": "/static/js/assets/images/store-icons.svg",
-    "buttons": [
-      {
-        "text": "App Store",
-        "link": "https://itunes.apple.com/ae/app/du/id521545878?mt=8",
-        "icon": "/static/js/assets/images/apple-pay.svg"
+    "default": {
+      "ar": {
+        "backgroundMobile": "/static/js/assets/images/store-icons.svg",
+        "backgroundDesktop": "/static/js/assets/images/store-icons.svg",
+        "title": "حمل تطبيق du",
+        "description": "استمتع بتجربة أفضل مع تطبيق du الجديد",
+        "buttonText": "تحميل الآن",
+        "productImgMobile": "/static/js/assets/images/store-icons.svg",
+        "productImgDesktop": "/static/js/assets/images/store-icons.svg"
       },
-      {
-        "text": "Google Play",
-        "link": "https://play.google.com/store/apps/details?id=duleaf.duapp.splash",
-        "icon": "/static/js/assets/images/google-pay.svg"
+      "en": {
+        "backgroundMobile": "/static/js/assets/images/store-icons.svg",
+        "backgroundDesktop": "/static/js/assets/images/store-icons.svg",
+        "title": "Download du App",
+        "description": "Enjoy a better experience with the new du app",
+        "buttonText": "Download Now",
+        "productImgMobile": "/static/js/assets/images/store-icons.svg",
+        "productImgDesktop": "/static/js/assets/images/store-icons.svg"
       }
-    ]
+    },
+    "tourist": {
+      "ar": {
+        "backgroundMobile": "/static/js/assets/images/store-icons.svg",
+        "backgroundDesktop": "/static/js/assets/images/store-icons.svg",
+        "title": "حمل تطبيق du",
+        "description": "استمتع بتجربة أفضل مع تطبيق du الجديد",
+        "buttonText": "تحميل الآن",
+        "productImgMobile": "/static/js/assets/images/store-icons.svg",
+        "productImgDesktop": "/static/js/assets/images/store-icons.svg"
+      },
+      "en": {
+        "backgroundMobile": "/static/js/assets/images/store-icons.svg",
+        "backgroundDesktop": "/static/js/assets/images/store-icons.svg",
+        "title": "Download du App",
+        "description": "Enjoy a better experience with the new du app",
+        "buttonText": "Download Now",
+        "productImgMobile": "/static/js/assets/images/store-icons.svg",
+        "productImgDesktop": "/static/js/assets/images/store-icons.svg"
+      }
+    }
   },
   "features": [
     {

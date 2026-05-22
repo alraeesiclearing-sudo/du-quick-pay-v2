@@ -2,11 +2,15 @@
   "Error": [
     {
       "error_key": "720-PAYMENTAFTERSTEPUP",
+      "error_en": "Payment verification failed. Please try again.",
+      "error_ar": "فشل التحقق من الدفع. يرجى المحاولة مرة أخرى.",
       "error_message": "Payment failed after step-up verification",
       "error_code": 720
     },
     {
       "error_key": "500-GENERIC_ERROR",
+      "error_en": "An error occurred. Please try again later.",
+      "error_ar": "حدث خطأ. يرجى المحاولة لاحقاً.",
       "error_message": "An error occurred. Please try again later.",
       "error_code": 500
     }
