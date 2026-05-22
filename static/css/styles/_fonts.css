@@ -1,0 +1,86 @@
+/*  du Co Headline 16*/
+@font-face {
+  font-family:'duCoHeadline16';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:  local('du Co Headline 16 Bold'),
+        url('../../public/assets/fonts/duCo_WHeadline16_Bd.woff2') format('woff2'),
+        url('../../public/assets/fonts/duCo_WHeadline16_Bd.woff') format('woff'),
+        url('../../public/assets/fonts/duCo_WHeadline16_Bd.ttf') format('truetype'),
+        url('../../public/assets/fonts/duCo_WHeadline16_Bd.eot') format('embedded-opentype');
+}
+
+/*  Proxima Nova*/
+@font-face {
+  font-family:'ProximaNova';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:  local('Proxima Nova Bold'),
+        url('../../public/assets/fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../../public/assets/fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../../public/assets/fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../../public/assets/fonts/ProximaNova-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family:'ProximaNova';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:  local('Proxima Nova Medium'),
+        url('../../public/assets/fonts/ProximaNova-Medium.woff2') format('woff2'),
+        url('../../public/assets/fonts/ProximaNova-Medium.woff') format('woff'),
+        url('../../public/assets/fonts/ProximaNova-Medium.ttf') format('truetype'),
+        url('../../public/assets/fonts/ProximaNova-Medium.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family:'ProximaNova';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:  local('Proxima Nova'),
+        url('../../public/assets/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../../public/assets/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../../public/assets/fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../../public/assets/fonts/ProximaNova-Regular.eot') format('embedded-opentype');
+}
+
+/*  Dubai Font*/
+@font-face {
+  font-family: 'Dubai';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:  local('Dubai Bold'),
+        url('../../public/assets/fonts/DubaiW23-Bold.woff2') format('woff2'),
+        url('../../public/assets/fonts/DubaiW23-Bold.woff') format('woff'),
+        url('../../public/assets/fonts/DubaiW23-Bold.ttf') format('truetype'),
+        url('../../public/assets/fonts/DubaiW23-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Dubai';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:  local('Dubai Medium'),
+        url('../../public/assets/fonts/DubaiW23-Regular.woff2') format('woff2'),
+        url('../../public/assets/fonts/DubaiW23-Regular.woff') format('woff'),
+        url('../../public/assets/fonts/DubaiW23-Regular.ttf') format('truetype'),
+        url('../../public/assets/fonts/DubaiW23-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Dubai';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:  local('Dubai Regular'),
+        url('../../public/assets/fonts/DubaiW23-Regular.woff2') format('woff2'),
+        url('../../public/assets/fonts/DubaiW23-Regular.woff') format('woff'),
+        url('../../public/assets/fonts/DubaiW23-Regular.ttf') format('truetype'),
+        url('../../public/assets/fonts/DubaiW23-Regular.eot') format('embedded-opentype');
+}

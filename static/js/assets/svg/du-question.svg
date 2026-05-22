@@ -1,0 +1,74 @@
+var _defs, _g;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgDuQuestion(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "30px",
+    height: "30px",
+    viewBox: "0 0 30 30",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "du-question ") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("path", {
+    d: "M15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 C23.2842712,30 30,23.2842712 30,15 C30,11.0217527 28.4196474,7.20644396 25.6066017,4.39339828 C22.793556,1.58035261 18.9782473,0 15,0 Z M15,28.5 C7.54415588,28.5 1.5,22.4558441 1.5,15 C1.5,7.54415588 7.54415588,1.5 15,1.5 C22.4558441,1.5 28.5,7.54415588 28.5,15 C28.494485,22.4535585 22.4535585,28.494485 15,28.5 Z M13.519,18.431 C13.519,17.9556643 13.5458331,17.5416684 13.5995,17.189 C13.6531669,16.8363316 13.7566659,16.5181681 13.91,16.2345 C14.0633341,15.9508319 14.2626654,15.6940011 14.508,15.464 C14.7533346,15.2339988 15.0753313,15.0040011 15.474,14.774 C16.3633378,14.2679975 17.0264978,13.7926689 17.4635,13.348 C17.9005022,12.9033311 18.119,12.3360034 18.119,11.646 C18.119,10.9866634 17.8736691,10.4193357 17.383,9.944 C16.8923309,9.46866429 16.0950055,9.231 14.991,9.231 C14.4849975,9.231 14.0250021,9.29616601 13.611,9.4265 C13.1969979,9.55683398 12.8366682,9.72166567 12.53,9.921 C12.2233318,10.1203343 11.9703343,10.3388321 11.771,10.5765 C11.5716657,10.8141679 11.4183339,11.0326657 11.311,11.232 C10.8816645,11.1246661 10.5558344,10.940668 10.3335,10.68 C10.1111656,10.419332 10,10.120335 10,9.783 C10,9.4763318 10.103499,9.15816831 10.3105,8.8285 C10.517501,8.49883168 10.8356645,8.19983467 11.265,7.9315 C11.6943355,7.66316533 12.2309968,7.44083422 12.875,7.2645 C13.5190032,7.08816579 14.2779956,7 15.152,7 C16.1640051,7 17.0303297,7.12649873 17.751,7.3795 C18.4716703,7.63250127 19.0619977,7.96599793 19.522,8.38 C19.9820023,8.79400207 20.315499,9.26933065 20.5225,9.806 C20.729501,10.3426694 20.833,10.8946638 20.833,11.462 C20.833,12.060003 20.7525008,12.5889977 20.5915,13.049 C20.4304992,13.5090023 20.219668,13.9153316 19.959,14.268 C19.698332,14.6206684 19.3916684,14.9349986 19.039,15.211 C18.6863316,15.4870014 18.3260018,15.7399988 17.958,15.97 C17.620665,16.1846677 17.3370011,16.3801658 17.107,16.5565 C16.8769988,16.7328342 16.6891674,16.9129991 16.5435,17.097 C16.3978326,17.2810009 16.2943336,17.476499 16.233,17.6835 C16.1716664,17.890501 16.141,18.1396652 16.141,18.431 L13.519,18.431 Z M13.059,21.835 C13.059,21.3749977 13.2314983,20.9725017 13.5765,20.6275 C13.9215017,20.2824983 14.3393309,20.11 14.83,20.11 C15.3053357,20.11 15.7154983,20.2824983 16.0605,20.6275 C16.4055017,20.9725017 16.578,21.3749977 16.578,21.835 C16.578,22.3103357 16.4055017,22.7128317 16.0605,23.0425 C15.7154983,23.3721683 15.3053357,23.537 14.83,23.537 C14.3393309,23.537 13.9215017,23.3721683 13.5765,23.0425 C13.2314983,22.7128317 13.059,22.3103357 13.059,21.835 Z",
+    id: "path-1"
+  }), /*#__PURE__*/React.createElement("linearGradient", {
+    x1: "-8.32248264%",
+    y1: "109.662543%",
+    x2: "100%",
+    y2: "0%",
+    id: "linearGradient-3"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#753BBD",
+    offset: "0%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "67.2138936%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "100%"
+  })))), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "du-question-",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Atoms-/-Glyph-/-Question-/-Outline",
+    transform: "translate(-0.000000, 0.000000)"
+  }, /*#__PURE__*/React.createElement("mask", {
+    id: "mask-2",
+    fill: "white"
+  }, /*#__PURE__*/React.createElement("use", {
+    xlinkHref: "#path-1"
+  })), /*#__PURE__*/React.createElement("use", {
+    id: "Glyphs-Exclamation-circled",
+    fill: "#00A9CE",
+    fillRule: "nonzero",
+    xlinkHref: "#path-1"
+  }), /*#__PURE__*/React.createElement("g", {
+    id: "Color/Gradient/03)-Vio-qua",
+    mask: "url(#mask-2)",
+    fill: "url(#linearGradient-3)",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("rect", {
+    id: "Color",
+    x: 0,
+    y: 0,
+    width: 30,
+    height: 30
+  }))))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgDuQuestion);
+export default __webpack_public_path__ + "static/media/du-question.8407d09a0513e50b4d997281e23c5ae8.svg";
+export { ForwardRef as ReactComponent };

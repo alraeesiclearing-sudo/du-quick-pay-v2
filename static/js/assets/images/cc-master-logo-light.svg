@@ -1,0 +1,64 @@
+var _desc, _g;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgCcMasterLogoLight(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "46px",
+    height: "29px",
+    viewBox: "0 0 46 29",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "Mastercard") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _desc || (_desc = /*#__PURE__*/React.createElement("desc", null, "Created with Sketch.")), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "Page-1",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "D-10b_Emirates_ID-Copy-2",
+    transform: "translate(-540.000000, -515.000000)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Saved-credit-card",
+    transform: "translate(327.000000, 390.000000)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Card",
+    transform: "translate(49.000000, 90.000000)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Mastercard",
+    transform: "translate(164.000000, 35.000000)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M17.4756653,14.7313512 C17.4756653,10.2890435 19.5673998,6.33484312 22.8247808,3.77588563 C20.42384,1.88873988 17.3891794,0.759185223 14.086642,0.759185223 C6.30673655,0.759185223 0.000153072415,7.01424595 0.000153072415,14.7313512 C0.000153072415,22.4476974 6.30673655,28.7027581 14.086642,28.7027581 C17.3891794,28.7027581 20.42384,27.5732034 22.8247808,25.6868168 C19.5673998,23.1271002 17.4756653,19.1728998 17.4756653,14.7313512",
+    id: "Fill-1",
+    fill: "#FEFEFE"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M17.4756653,14.7313512 C17.4756653,19.1728998 19.5673998,23.1271002 22.8247808,25.6868168 C26.0821618,23.1271002 28.1746617,19.1728998 28.1746617,14.7313512 C28.1746617,10.2890435 26.0821618,6.33484312 22.8247808,3.77588563 C19.5673998,6.33484312 17.4756653,10.2890435 17.4756653,14.7313512",
+    id: "Fill-3",
+    fill: "#FEFEFE",
+    opacity: 0.75
+  }), /*#__PURE__*/React.createElement("g", {
+    id: "Group-7",
+    transform: "translate(22.195500, 0.616017)"
+  }, /*#__PURE__*/React.createElement("polygon", {
+    id: "Clip-6",
+    points: "0.629510304 0.142940283 23.454138 0.142940283 23.454138 28.0870445 0.629510304 28.0870445"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M9.36764908,0.142940283 C6.0658771,0.142940283 3.03121649,1.27249494 0.629510304,3.1603998 C3.88689128,5.71935729 5.97862583,9.67355769 5.97862583,14.1151063 C5.97862583,18.5566549 3.88689128,22.5108553 0.629510304,25.0705719 C3.03121649,26.9569585 6.0658771,28.0872723 9.36764908,28.0872723 C17.1475545,28.0872723 23.454138,21.8314524 23.454138,14.1151063 C23.454138,6.39800101 17.1475545,0.142940283 9.36764908,0.142940283",
+    id: "Fill-5",
+    fill: "#FEFEFE",
+    opacity: 0.5
+  })))))))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgCcMasterLogoLight);
+export default __webpack_public_path__ + "static/media/cc-master-logo-light.efad24af3ec860659894bf76da3549d8.svg";
+export { ForwardRef as ReactComponent };

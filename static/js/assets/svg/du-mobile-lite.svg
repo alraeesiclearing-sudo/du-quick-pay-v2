@@ -1,0 +1,59 @@
+var _defs, _g;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgDuMobileLite(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "30px",
+    height: "30px",
+    viewBox: "0 0 30 30",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "du-mobile-lite ") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    x1: "20.3836689%",
+    y1: "100%",
+    x2: "80.4344705%",
+    y2: "0%",
+    id: "linearGradient-1"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#753BBD",
+    offset: "0%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "67.2138936%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "100%"
+  })), /*#__PURE__*/React.createElement("path", {
+    d: "M21.476,-0.0004 C22.868,-0.0004 24,1.1326 24,2.5246 L24,2.5246 L24,27.4756 C24,28.8676 22.868,29.9996 21.476,29.9996 L21.476,29.9996 L8.524,29.9996 C7.132,29.9996 6,28.8676 6,27.4756 L6,27.4756 L6,2.5246 C6,1.1326 7.132,-0.0004 8.524,-0.0004 L8.524,-0.0004 Z M21.476,1.4996 L8.524,1.4996 C7.959,1.4996 7.5,1.9596 7.5,2.5246 L7.5,2.5246 L7.5,27.4756 C7.5,28.0396 7.959,28.4996 8.524,28.4996 L8.524,28.4996 L21.476,28.4996 C22.041,28.4996 22.5,28.0396 22.5,27.4756 L22.5,27.4756 L22.5,2.5246 C22.5,1.9596 22.041,1.4996 21.476,1.4996 L21.476,1.4996 Z M14.7088,24.9902 C14.9888,24.8802 15.3188,24.9502 15.5288,25.1602 C15.5988,25.2292 15.6588,25.3092 15.6888,25.3992 C15.7288,25.4902 15.7488,25.5902 15.7488,25.6892 C15.7488,25.7902 15.7288,25.8802 15.6888,25.9702 C15.6588,26.0592 15.5988,26.1492 15.5288,26.2202 C15.3888,26.3592 15.1988,26.4392 14.9988,26.4392 C14.8988,26.4392 14.7988,26.4202 14.7088,26.3802 C14.6188,26.3402 14.5388,26.2902 14.4688,26.2202 C14.3288,26.0692 14.2488,25.8892 14.2488,25.6892 C14.2488,25.5902 14.2688,25.4902 14.3088,25.3992 C14.3488,25.3092 14.3988,25.2292 14.4688,25.1602 C14.5388,25.0902 14.6188,25.0302 14.7088,24.9902 Z M17.5,3.5625 C17.914,3.5625 18.25,3.8985 18.25,4.3125 C18.25,4.7265 17.914,5.0625 17.5,5.0625 L17.5,5.0625 L12.5,5.0625 C12.086,5.0625 11.75,4.7265 11.75,4.3125 C11.75,3.8985 12.086,3.5625 12.5,3.5625 L12.5,3.5625 Z",
+    id: "path-2"
+  }))), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "du-mobile-lite-",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("mask", {
+    id: "mask-3",
+    fill: "white"
+  }, /*#__PURE__*/React.createElement("use", {
+    xlinkHref: "#path-2"
+  })), /*#__PURE__*/React.createElement("use", {
+    id: "Combined-Shape",
+    fill: "url(#linearGradient-1)",
+    xlinkHref: "#path-2"
+  }))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgDuMobileLite);
+export default __webpack_public_path__ + "static/media/du-mobile-lite.2dbf71159ce935d1f24a7b6ba685a047.svg";
+export { ForwardRef as ReactComponent };

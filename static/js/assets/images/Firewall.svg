@@ -1,0 +1,41 @@
+var _g;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgFirewall(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 28,
+    viewBox: "0 0 24 28",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    opacity: 0.58345
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.8309 27.9743C11.8857 27.9918 11.9429 28 12 28C12.0571 28 12.1143 27.9918 12.1691 27.9743C16.2949 26.663 24 22.0757 24 16.9167V4.08333C24 3.8255 23.8343 3.59917 23.592 3.5245L12.1634 0.0245C12.056 -0.00816667 11.9429 -0.00816667 11.8354 0.0245L0.406857 3.5245C0.165714 3.598 0 3.8255 0 4.08333V16.9167C0 22.0757 7.70514 26.6642 11.8309 27.9743ZM1.14318 16.9167V4.51738L12.0003 1.19238L22.8575 4.51738V16.9167C22.8575 21.0129 16.4997 25.3202 12.0003 26.8054C7.50089 25.3202 1.14318 21.0129 1.14318 16.9167Z",
+    fill: "#777777"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M2.85658 14H11.9994C12.3149 14 12.5709 13.7387 12.5709 13.4167V3.01936C12.5709 2.83503 12.4852 2.66119 12.34 2.55153C12.1949 2.44186 12.0063 2.40803 11.8349 2.46053L2.69201 5.26053C2.45087 5.33403 2.28516 5.56153 2.28516 5.81936V13.4167C2.28516 13.7387 2.54116 14 2.85658 14ZM11.4286 12.8333H3.42857V6.25451L11.4286 3.80334V12.8333Z",
+    fill: "#777777"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.671 25.4334C11.7693 25.5034 11.8836 25.5395 12.0001 25.5395C12.0653 25.5395 12.1304 25.5279 12.1933 25.5045C16.6973 23.8479 21.7144 19.9139 21.7144 16.9167V13.4167C21.7144 13.0947 21.4584 12.8334 21.143 12.8334H12.0001C11.6847 12.8334 11.4287 13.0947 11.4287 13.4167V24.9562C11.4287 25.1464 11.519 25.3237 11.671 25.4334ZM12.5721 24.1057V14H20.5721V16.9167C20.5721 18.9852 16.7835 22.3405 12.5721 24.1057Z",
+    fill: "#777777"
+  }))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgFirewall);
+export default __webpack_public_path__ + "static/media/Firewall.e9eb53f2d58d8fadf2c1932a3ed618e2.svg";
+export { ForwardRef as ReactComponent };

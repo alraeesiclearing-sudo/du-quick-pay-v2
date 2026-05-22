@@ -1,0 +1,27 @@
+var _path;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgDuChevronRight(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 25,
+    viewBox: "0 0 24 25",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M9.29 16.0467L13.17 12.1667L9.29 8.28667C8.9 7.89667 8.9 7.26667 9.29 6.87667C9.68 6.48667 10.31 6.48667 10.7 6.87667L15.29 11.4667C15.68 11.8567 15.68 12.4867 15.29 12.8767L10.7 17.4667C10.31 17.8567 9.68 17.8567 9.29 17.4667C8.91 17.0767 8.9 16.4367 9.29 16.0467Z",
+    fill: "#C724B1"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgDuChevronRight);
+export default __webpack_public_path__ + "static/media/du-chevron-right.622ceb62f9106ceb44c5ad1ad9ae0c4e.svg";
+export { ForwardRef as ReactComponent };

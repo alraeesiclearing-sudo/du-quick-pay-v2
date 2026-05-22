@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="18px" viewBox="0 0 29 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>mastercard-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="D---00---Credit-card-payment-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-914.000000, -392.000000)">
+        <g id="Group-4" transform="translate(712.000000, 291.000000)">
+            <g id="mastercard-logo" transform="translate(202.000000, 101.000000)">
+                <ellipse id="Combined-Shape" fill="#FF5E00" cx="8.7" cy="8.57593842" rx="8.7" ry="8.57593842"></ellipse>
+                <path d="M14.3432432,2.04867664 C12.4726303,3.62166184 11.2864865,5.96225604 11.2864865,8.57593842 C11.2864865,11.1896208 12.4726303,13.530215 14.3432432,15.1032002 C12.8240425,16.3806854 10.8533848,17.1518768 8.7,17.1518768 C3.89512268,17.1518768 0,13.3122984 0,8.57593842 C0,3.83957841 3.89512268,0 8.7,0 C10.8533848,0 12.8240425,0.771191469 14.3432432,2.04867664 Z" id="Combined-Shape" fill="#EE0006"></path>
+                <path d="M14.1081081,15.1032002 C15.978721,13.530215 17.1648649,11.1896208 17.1648649,8.57593842 C17.1648649,5.96225604 15.978721,3.62166184 14.1081081,2.04867664 C15.6273089,0.771191469 17.5979666,0 19.7513514,0 C24.5562287,0 28.4513514,3.83957841 28.4513514,8.57593842 C28.4513514,13.3122984 24.5562287,17.1518768 19.7513514,17.1518768 C17.5979666,17.1518768 15.6273089,16.3806854 14.1081081,15.1032002 Z" id="Combined-Shape" fill="#FA9E00"></path>
+            </g>
+        </g>
+    </g>
+</svg>

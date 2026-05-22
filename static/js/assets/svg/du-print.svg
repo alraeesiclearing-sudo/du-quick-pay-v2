@@ -1,0 +1,59 @@
+var _defs, _g;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgDuPrint(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "30px",
+    height: "30px",
+    viewBox: "0 0 30 30",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "du-print ") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    x1: "0%",
+    y1: "100%",
+    x2: "100%",
+    y2: "0%",
+    id: "linearGradient-1"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#753BBD",
+    offset: "0%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "67.2138936%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "100%"
+  })), /*#__PURE__*/React.createElement("path", {
+    d: "M17.0782,0 C17.0962,0 17.1102,0.009 17.1282,0.01 C17.1922,0.015 17.2552,0.026 17.3162,0.047 C17.3412,0.056 17.3652,0.063 17.3902,0.073 C17.4692,0.109 17.5442,0.155 17.6082,0.22 L17.6082,0.22 L24.7332,7.345 C24.7982,7.409 24.8442,7.484 24.8802,7.564 C24.8902,7.588 24.8972,7.611 24.9052,7.636 C24.9272,7.698 24.9392,7.762 24.9432,7.828 C24.9452,7.844 24.9532,7.858 24.9532,7.875 L24.9532,7.875 L24.9532,8.652 L27.4692,8.652 C28.8642,8.652 30.0002,9.788 30.0002,11.184 L30.0002,11.184 L30.0002,21.871 C30.0002,23.267 28.8642,24.402 27.4692,24.402 L27.4692,24.402 L24.9532,24.402 L24.9532,27.469 C24.9532,28.864 23.8172,30 22.4222,30 L22.4222,30 L7.5782,30 C6.1822,30 5.0472,28.864 5.0472,27.469 L5.0472,27.469 L5.0472,24.402 L2.5312,24.402 C1.1362,24.402 0.0002,23.267 0.0002,21.871 L0.0002,21.871 L0.0002,11.184 C0.0002,9.788 1.1362,8.652 2.5312,8.652 L2.5312,8.652 L5.0472,8.652 L5.0472,2.531 C5.0472,1.136 6.1822,0 7.5782,0 L7.5782,0 Z M23.4532,24.402 L6.5472,24.402 L6.5472,27.469 C6.5472,28.037 7.0102,28.5 7.5782,28.5 L7.5782,28.5 L22.4222,28.5 C22.9902,28.5 23.4532,28.037 23.4532,27.469 L23.4532,27.469 L23.4532,24.402 Z M5.0472,10.152 L2.5312,10.152 C1.9632,10.152 1.5002,10.615 1.5002,11.184 L1.5002,11.184 L1.5002,21.871 C1.5002,22.439 1.9632,22.902 2.5312,22.902 L2.5312,22.902 L27.4692,22.902 C28.0372,22.902 28.5002,22.439 28.5002,21.871 L28.5002,21.871 L28.5002,11.184 C28.5002,10.615 28.0372,10.152 27.4692,10.152 L27.4692,10.152 L24.9532,10.152 L24.9532,14.152 C24.9532,14.566 24.6172,14.902 24.2032,14.902 L24.2032,14.902 L5.7972,14.902 C5.3832,14.902 5.0472,14.566 5.0472,14.152 L5.0472,14.152 L5.0472,10.152 Z M23.6778,18.3721 C23.9488,18.0921 24.4578,18.0921 24.7278,18.3721 C24.8678,18.5121 24.9488,18.7021 24.9488,18.9021 C24.9488,19.1021 24.8778,19.2921 24.7278,19.4321 C24.5878,19.5721 24.3978,19.6521 24.1988,19.6521 C23.9978,19.6521 23.8178,19.5721 23.6778,19.4321 C23.5978,19.3621 23.5478,19.2821 23.5078,19.1921 C23.4678,19.1021 23.4488,19.0021 23.4488,18.9021 C23.4488,18.8021 23.4678,18.7121 23.5078,18.6121 C23.5478,18.5221 23.6078,18.4421 23.6778,18.3721 Z M16.3282,1.5 L7.5782,1.5 C7.0102,1.5 6.5472,1.963 6.5472,2.531 L6.5472,2.531 L6.5472,13.402 L23.4532,13.402 L23.4532,8.625 L17.0782,8.625 C16.6642,8.625 16.3282,8.289 16.3282,7.875 L16.3282,7.875 L16.3282,1.5 Z M17.8282,2.561 L17.8282,7.125 L22.3922,7.125 L17.8282,2.561 Z",
+    id: "path-2"
+  }))), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "du-print-",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("mask", {
+    id: "mask-3",
+    fill: "white"
+  }, /*#__PURE__*/React.createElement("use", {
+    xlinkHref: "#path-2"
+  })), /*#__PURE__*/React.createElement("use", {
+    id: "Combined-Shape",
+    fill: "url(#linearGradient-1)",
+    xlinkHref: "#path-2"
+  }))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgDuPrint);
+export default __webpack_public_path__ + "static/media/du-print.f5826b40192dc0eca2688e66f669ccee.svg";
+export { ForwardRef as ReactComponent };
