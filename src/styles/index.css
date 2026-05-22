@@ -1,0 +1,143 @@
+
+body {
+  margin: 0;
+  font-family: ProximaNova;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ProximaNova;
+}
+[dir=rtl] * {
+  font-family: Dubai;
+}
+.colorInversion {
+  filter: grayscale(100%) !important;
+}
+.slick-track{
+  display: flex !important;
+  align-items: flex-end
+}
+/*[dir=rtl]  .slick-track{*/
+/*  flex-flow: row-reverse;*/
+/*}*/
+.slick-slide{
+  margin-right: 20px
+}
+.slick-dots li{
+  width: 24px !important;
+  height: 4px !important;
+}
+.slick-dots li button:before{
+  width: 100% !important;
+  border-radius: 3px !important;
+  background: #C724B1;
+  height:4px !important;
+  font-size: 0 !important;
+}
+/*[dir='rtl'] .slick-slide{*/
+/*  float: left !important;*/
+/*}*/
+
+.smartbanner{
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  a.smartbanner__button{
+    background: linear-gradient(45deg, #824bc7 6%, #d92cc1 53%);
+    color: #fff;
+    padding: 9px 13px;
+    font-size: 14px;
+    top: 25px;
+    [dir=rtl] & {
+      right: auto;
+      left: 10px
+    }
+  }
+  .smartbanner__icon {
+    [dir=rtl] & {
+      right: 30px;
+    }
+  }
+  .smartbanner__exit {
+    [dir=rtl] & {
+      right: 9px
+    }
+  }
+  .smartbanner__info {
+    [dir=rtl] & {
+      right: 104px
+    }
+  }
+}
+
+/* Plans Faqs */
+.du-content-inner .plans-landing--popup-question:first-child{
+  padding-top: 0;
+}
+.text-h3 {
+  font-size: 1.4705882353rem;
+  font-weight: 700;
+  line-height: 1.8382352941rem;
+  letter-spacing: normal;
+  font-family: "duCoHeadline16";
+  margin-bottom: 10px;
+}
+.text-body-1 {
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: ProximaNova;
+}
+.plans-landing--popup-question{
+  font-size: 1.1764705882rem;
+  font-weight: 700;
+  padding: 40px 0 8px;
+}
+.plans-landing--popup-answer {
+  font-size: .8823529412rem;
+  line-height: 1.2352941176rem;
+  font-family: ProximaNova;
+}
+.du-content-inner{
+  max-height: 500px;
+  overflow: auto;
+  padding-right: 30px;
+}
+.du-content-inner ul{
+  list-style-position: inside;
+}
+.plans-landing--popup-answer table:not(.no-styles) {
+  font-size: .8823529412rem;
+  line-height: 1.2352941176rem;
+  overflow: hidden;
+  margin-left: 1px;
+  box-shadow: 0 0 0 1px #bbb;
+  border-radius: 8px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #979797;
+  width: calc(100% - 2px);
+  margin-bottom: 16px;
+  font-family: inherit;
+}
+.plans-landing--popup-answer table:not(.no-styles) tbody {
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+}
+.plans-landing--popup-answer table:not(.no-styles) tbody tr:nth-child(odd) {
+  background-color: rgba(0,169,206,.1);
+}
+.plans-landing--popup-answer table:not(.no-styles) tr th {
+  border: 0.5px solid #979797;
+  padding: 0.5rem 0.625rem 0.625rem;
+  text-align: inherit;
+}
+.plans-landing--popup-answer table:not(.no-styles) tr td {
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #bbb;
+}

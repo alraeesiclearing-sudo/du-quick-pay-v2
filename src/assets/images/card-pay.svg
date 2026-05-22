@@ -1,0 +1,46 @@
+var _rect, _path, _defs;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgCardPay(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 48,
+    height: 48,
+    viewBox: "0 0 48 48",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 48,
+    height: 48,
+    rx: 6,
+    fill: "#F8F8F8"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.6997 14.1333H37.3003C38.7883 14.1333 40 15.3056 40 16.7466V31.2533C40 32.6944 38.7893 33.8666 37.3003 33.8666H10.6997C9.21174 33.8666 8 32.6944 8 31.2533V16.7466C8 15.3056 9.21067 14.1333 10.6997 14.1333ZM37.3003 15.7333H10.6997C10.0939 15.7333 9.6 16.1877 9.6 16.7466V18.1632H38.4V16.7466C38.4 16.1877 37.9061 15.7333 37.3003 15.7333ZM10.6997 32.2666H37.3003C37.9061 32.2666 38.4 31.8122 38.4 31.2533V23.3898H9.6V31.2533C9.6 31.8122 10.0939 32.2666 10.6997 32.2666ZM14.0288 25.3493H16.2389C17.5605 25.3493 18.6357 26.4245 18.6357 27.7472V27.9093C18.6357 29.232 17.5605 30.3072 16.2389 30.3072H14.0288C12.7072 30.3072 11.632 29.232 11.632 27.9093V27.7472C11.632 26.4245 12.7072 25.3493 14.0288 25.3493ZM16.2389 28.7072C16.6784 28.7072 17.0357 28.3499 17.0357 27.9093V27.7472C17.0357 27.3067 16.6784 26.9493 16.2389 26.9493H14.0288C13.5893 26.9493 13.232 27.3067 13.232 27.7472V27.9093C13.232 28.3499 13.5893 28.7072 14.0288 28.7072H16.2389Z",
+    fill: "url(#paint0_linear_3475_21672)"
+  })), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_3475_21672",
+    x1: 9.38327,
+    y1: 28.0131,
+    x2: 32.409,
+    y2: 11.3887,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#753BBD"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.6,
+    stopColor: "#00A9CE"
+  })))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgCardPay);
+export default __webpack_public_path__ + "static/media/card-pay.05bb31d12d12b2114c18bf766e8854b3.svg";
+export { ForwardRef as ReactComponent };

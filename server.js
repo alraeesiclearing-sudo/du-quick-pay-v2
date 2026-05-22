@@ -16,10 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Serve static files from root (for CSS, JS, images)
+// Serve static files from root directory
 app.use(express.static(path.join(__dirname)));
 
 // API Routes
@@ -47,32 +44,19 @@ app.get('/du/common/myaccount/backend-routine/error.json', (req, res) => {
   });
 });
 
-// Servlet routes
-app.get('/servlet/myaccount/en/mya-quick-pay-payment.html', (req, res) => {
-  res.send(`
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Quick Pay</title>
-    </head>
-    <body>
-      <input type="hidden" name="_authkey_" value="test_auth_key_12345">
-      <script>
-        console.log('Quick Pay Payment Page Loaded');
-      </script>
-    </body>
-    </html>
-  `);
-});
-
 // Serve ar/quick-pay.html for /ar/quick-pay
 app.get('/ar/quick-pay', (req, res) => {
   res.sendFile(path.join(__dirname, 'ar/quick-pay.html'));
 });
 
+// Serve webapp/ar/quick-pay for original path
+app.get('/webapp/ar/quick-pay', (req, res) => {
+  res.sendFile(path.join(__dirname, 'ar/quick-pay.html'));
+});
+
 // Serve root
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Catch all - serve ar/quick-pay.html for React routing

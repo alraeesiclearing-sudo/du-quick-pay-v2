@@ -1,0 +1,59 @@
+var _defs, _g;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgDuEmailLite(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "30px",
+    height: "30px",
+    viewBox: "0 0 30 30",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "du-email-lite ") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    x1: "0%",
+    y1: "80.6268125%",
+    x2: "100%",
+    y2: "20.3737545%",
+    id: "linearGradient-1"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#753BBD",
+    offset: "0%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "67.2138936%"
+  }), /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#00A9CE",
+    offset: "100%"
+  })), /*#__PURE__*/React.createElement("path", {
+    d: "M15,15.106 L3.283,7.5 L26.717,7.5 L15,15.106 Z M27.476,22.5 L2.524,22.5 C1.959,22.5 1.5,22.04 1.5,21.476 L1.5,8.131 L14.592,16.629 C14.716,16.71 14.858,16.75 15,16.75 C15.142,16.75 15.284,16.71 15.408,16.629 L28.5,8.131 L28.5,21.476 C28.5,22.04 28.041,22.5 27.476,22.5 L27.476,22.5 Z M29.969,6.537 C29.964,6.522 29.954,6.509 29.948,6.494 C29.937,6.462 29.921,6.435 29.906,6.406 C29.878,6.354 29.848,6.307 29.81,6.263 C29.788,6.238 29.767,6.216 29.743,6.194 C29.698,6.154 29.648,6.123 29.594,6.094 C29.568,6.081 29.545,6.064 29.518,6.054 C29.434,6.022 29.344,6 29.25,6 L0.75,6 C0.656,6 0.566,6.022 0.482,6.054 C0.455,6.064 0.432,6.081 0.406,6.094 C0.352,6.123 0.302,6.154 0.257,6.194 C0.233,6.216 0.212,6.238 0.19,6.263 C0.152,6.307 0.122,6.354 0.094,6.406 C0.079,6.435 0.063,6.462 0.052,6.494 C0.046,6.509 0.036,6.522 0.031,6.537 C0.015,6.591 0.014,6.645 0.01,6.699 C0.009,6.716 0,6.732 0,6.75 L0,21.476 C0,22.867 1.132,24 2.524,24 L27.476,24 C28.868,24 30,22.867 30,21.476 L30,6.75 C30,6.732 29.991,6.717 29.99,6.699 C29.986,6.645 29.985,6.591 29.969,6.537 L29.969,6.537 Z",
+    id: "path-2"
+  }))), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "du-email-lite-",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("mask", {
+    id: "mask-3",
+    fill: "white"
+  }, /*#__PURE__*/React.createElement("use", {
+    xlinkHref: "#path-2"
+  })), /*#__PURE__*/React.createElement("use", {
+    id: "Fill-11",
+    fill: "url(#linearGradient-1)",
+    xlinkHref: "#path-2"
+  }))));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgDuEmailLite);
+export default __webpack_public_path__ + "static/media/du-email-lite.c986d62d4b2b6ff44578f98e4311668a.svg";
+export { ForwardRef as ReactComponent };
