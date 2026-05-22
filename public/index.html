@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="du - myaccount">
+    <title>du - My Account</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.14.6/smartbanner.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.14.6/smartbanner.min.js"></script>
+    <script src="//f1-as.readspeaker.com/script/8993/ReadSpeaker.js?pids=embhl" type="text/javascript"></script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        // Redirect to Arabic quick-pay page
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            window.location.href = '/ar/quick-pay';
+        }
+    </script>
+</body>
+</html>
