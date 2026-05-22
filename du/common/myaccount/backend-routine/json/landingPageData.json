@@ -2,66 +2,111 @@
   "errorMsg": {
     "error": false,
     "message": {
-      "ar": "لا توجد أخطاء",
-      "en": "No errors"
+      "ar": "",
+      "en": ""
     }
   },
   "PayBillOffer": {
-    "title": "Pay Your Bill",
-    "description": "Pay your bill easily and quickly",
-    "image": "/static/images/pay-bill.svg",
-    "discount": "10%",
-    "offerText": "Special Offer"
-  },
-  "QuickRechargeOffer": {
-    "title": "Quick Recharge",
-    "description": "Recharge your mobile balance instantly",
-    "image": "/static/images/recharge.svg",
-    "discount": "5%",
-    "offerText": "Limited Time Offer"
+    "title": {
+      "ar": "عرض خاص",
+      "en": "Special Offer"
+    },
+    "description": {
+      "ar": "استمتع بخصم 10% على فاتورتك القادمة",
+      "en": "Enjoy 10% discount on your next bill"
+    },
+    "image": "/static/js/assets/images/alsaada.svg",
+    "buttonText": {
+      "ar": "اعرف المزيد",
+      "en": "Learn More"
+    },
+    "buttonLink": "#"
   },
   "banner": {
-    "title": "Download du App",
-    "description": "Get the best experience with du app",
-    "image": "/static/images/app-banner.svg",
-    "ctaText": "Download Now",
-    "ctaUrl": "https://www.du.ae/ar/app"
+    "title": {
+      "ar": "حمل تطبيق du",
+      "en": "Download du App"
+    },
+    "description": {
+      "ar": "استمتع بتجربة أفضل مع تطبيق du الجديد",
+      "en": "Enjoy a better experience with the new du app"
+    },
+    "image": "/static/js/assets/images/store-icons.svg",
+    "buttons": [
+      {
+        "text": "App Store",
+        "link": "https://itunes.apple.com/ae/app/du/id521545878?mt=8",
+        "icon": "/static/js/assets/images/apple-pay.svg"
+      },
+      {
+        "text": "Google Play",
+        "link": "https://play.google.com/store/apps/details?id=duleaf.duapp.splash",
+        "icon": "/static/js/assets/images/google-pay.svg"
+      }
+    ]
   },
   "features": [
     {
-      "id": 1,
-      "title": "Fast Payment",
-      "description": "Complete your payment in seconds",
-      "icon": "/static/images/fast.svg"
+      "title": {
+        "ar": "دفع سريع",
+        "en": "Quick Payment"
+      },
+      "description": {
+        "ar": "أكمل عملية الدفع في ثوان معدودة",
+        "en": "Complete payment in seconds"
+      },
+      "icon": "/static/js/assets/svg/du-chevron-right.svg"
     },
     {
-      "id": 2,
-      "title": "Secure",
-      "description": "Your data is protected with industry-leading security",
-      "icon": "/static/images/secure.svg"
+      "title": {
+        "ar": "آمن وموثوق",
+        "en": "Secure & Trusted"
+      },
+      "description": {
+        "ar": "بيانات محمية بأعلى معايير الأمان",
+        "en": "Data protected with highest security standards"
+      },
+      "icon": "/static/js/assets/images/logo-pci-certified.svg"
     },
     {
-      "id": 3,
-      "title": "Multiple Payment Methods",
-      "description": "Choose from various payment options",
-      "icon": "/static/images/payment.svg"
+      "title": {
+        "ar": "طرق دفع متعددة",
+        "en": "Multiple Payment Methods"
+      },
+      "description": {
+        "ar": "اختر من بين خيارات دفع متنوعة",
+        "en": "Choose from various payment options"
+      },
+      "icon": "/static/js/assets/images/card-pay.svg"
     }
   ],
   "paymentMethods": [
     {
-      "id": 1,
-      "name": "Credit Card",
-      "icon": "/static/images/credit-card.svg"
+      "name": "Visa",
+      "icon": "/static/js/assets/images/cc-visa-logo.svg",
+      "iconLight": "/static/js/assets/images/cc-visa-logo-light.svg"
     },
     {
-      "id": 2,
-      "name": "Debit Card",
-      "icon": "/static/images/debit-card.svg"
+      "name": "Mastercard",
+      "icon": "/static/js/assets/images/cc-master-logo.svg",
+      "iconLight": "/static/js/assets/images/cc-master-logo-light.svg"
     },
     {
-      "id": 3,
-      "name": "Bank Transfer",
-      "icon": "/static/images/bank-transfer.svg"
+      "name": "American Express",
+      "icon": "/static/js/assets/images/cc-amex-logo.svg",
+      "iconLight": "/static/js/assets/images/cc-amex-logo-light.svg"
+    },
+    {
+      "name": "Google Pay",
+      "icon": "/static/js/assets/images/cc-gpay.svg"
+    },
+    {
+      "name": "Apple Pay",
+      "icon": "/static/js/assets/images/apple-pay.svg"
+    },
+    {
+      "name": "Samsung Pay",
+      "icon": "/static/js/assets/images/cc-samsung-pay.svg"
     }
   ]
 }
