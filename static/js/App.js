@@ -116,7 +116,7 @@ function App() {
             <DirectionContext.Provider value={direction}>
                 <Layout>
                     <SubHeaderContext.Provider value={{showHeader, setShowHeader}}>
-                    <BrowserRouter basename="/">
+                    <BrowserRouter basename="/webapp">
                         
                             {(!isEntertainer) && (<TheHeader />)}
                         
