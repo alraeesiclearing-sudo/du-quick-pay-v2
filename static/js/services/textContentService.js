@@ -9,7 +9,31 @@ const fetchTextContent = async () => {
         return response.data;
     }
     catch(err){
-        console.log(err);
+        console.error("Error fetching landing page data:", err);
+        // Return default data on error
+        return {
+            errorMsg: {
+                error: false,
+                message: {
+                    ar: "لا توجد أخطاء",
+                    en: "No errors"
+                }
+            },
+            PayBillOffer: {
+                title: "Pay Your Bill",
+                description: "Pay your bill easily and quickly",
+                image: "/static/images/pay-bill.svg",
+                discount: "10%",
+                offerText: "Special Offer"
+            },
+            banner: {
+                title: "Download du App",
+                description: "Get the best experience with du app",
+                image: "/static/images/app-banner.svg",
+                ctaText: "Download Now",
+                ctaUrl: "https://www.du.ae/ar/app"
+            }
+        };
     }
 }
 export default fetchTextContent;
