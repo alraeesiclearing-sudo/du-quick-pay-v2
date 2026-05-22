@@ -1,0 +1,36 @@
+{
+  "quickPay": {
+    "title": "Quick Pay",
+    "description": "Pay your bills quickly and securely",
+    "features": [
+      {
+        "id": 1,
+        "title": "Fast Payment",
+        "description": "Complete your payment in seconds"
+      },
+      {
+        "id": 2,
+        "title": "Secure",
+        "description": "Your data is protected with industry-leading security"
+      },
+      {
+        "id": 3,
+        "title": "Multiple Payment Methods",
+        "description": "Choose from various payment options"
+      }
+    ],
+    "offers": [
+      {
+        "id": 1,
+        "title": "Special Offer",
+        "description": "Get 10% discount on your first payment",
+        "discount": 10
+      }
+    ]
+  },
+  "quickRecharge": {
+    "title": "Quick Recharge",
+    "description": "Recharge your mobile balance instantly",
+    "features": []
+  }
+}

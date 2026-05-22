@@ -1,0 +1,14 @@
+{
+  "Error": [
+    {
+      "error_key": "720-PAYMENTAFTERSTEPUP",
+      "error_message": "Payment failed after step-up verification",
+      "error_code": 720
+    },
+    {
+      "error_key": "500-GENERIC_ERROR",
+      "error_message": "An error occurred. Please try again later.",
+      "error_code": 500
+    }
+  ]
+}
