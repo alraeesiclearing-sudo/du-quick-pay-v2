@@ -1,36 +1,67 @@
 {
-  "quickPay": {
-    "title": "Quick Pay",
-    "description": "Pay your bills quickly and securely",
-    "features": [
-      {
-        "id": 1,
-        "title": "Fast Payment",
-        "description": "Complete your payment in seconds"
-      },
-      {
-        "id": 2,
-        "title": "Secure",
-        "description": "Your data is protected with industry-leading security"
-      },
-      {
-        "id": 3,
-        "title": "Multiple Payment Methods",
-        "description": "Choose from various payment options"
-      }
-    ],
-    "offers": [
-      {
-        "id": 1,
-        "title": "Special Offer",
-        "description": "Get 10% discount on your first payment",
-        "discount": 10
-      }
-    ]
+  "errorMsg": {
+    "error": false,
+    "message": {
+      "ar": "لا توجد أخطاء",
+      "en": "No errors"
+    }
   },
-  "quickRecharge": {
+  "PayBillOffer": {
+    "title": "Pay Your Bill",
+    "description": "Pay your bill easily and quickly",
+    "image": "/static/images/pay-bill.svg",
+    "discount": "10%",
+    "offerText": "Special Offer"
+  },
+  "QuickRechargeOffer": {
     "title": "Quick Recharge",
     "description": "Recharge your mobile balance instantly",
-    "features": []
-  }
+    "image": "/static/images/recharge.svg",
+    "discount": "5%",
+    "offerText": "Limited Time Offer"
+  },
+  "banner": {
+    "title": "Download du App",
+    "description": "Get the best experience with du app",
+    "image": "/static/images/app-banner.svg",
+    "ctaText": "Download Now",
+    "ctaUrl": "https://www.du.ae/ar/app"
+  },
+  "features": [
+    {
+      "id": 1,
+      "title": "Fast Payment",
+      "description": "Complete your payment in seconds",
+      "icon": "/static/images/fast.svg"
+    },
+    {
+      "id": 2,
+      "title": "Secure",
+      "description": "Your data is protected with industry-leading security",
+      "icon": "/static/images/secure.svg"
+    },
+    {
+      "id": 3,
+      "title": "Multiple Payment Methods",
+      "description": "Choose from various payment options",
+      "icon": "/static/images/payment.svg"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": 1,
+      "name": "Credit Card",
+      "icon": "/static/images/credit-card.svg"
+    },
+    {
+      "id": 2,
+      "name": "Debit Card",
+      "icon": "/static/images/debit-card.svg"
+    },
+    {
+      "id": 3,
+      "name": "Bank Transfer",
+      "icon": "/static/images/bank-transfer.svg"
+    }
+  ]
 }
